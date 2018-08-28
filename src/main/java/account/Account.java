@@ -62,14 +62,12 @@ public class Account {
     }
 
     public double withdraw(double number) {
-        return blance - number;
+        blance -= number;
+        return blance;
     }
 
     public double deposit(double number) {
-        return blance + number;
-    }
-
-    public double displayAccount(Account account) {
-        return blance;
+        blance += number;
+        return blance ;
     }
 }
