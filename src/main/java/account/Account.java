@@ -1,11 +1,13 @@
 package account;
 
+import java.util.Date;
+
 public class Account {
     //    Fields
     private int id = 0;
     private double blance = 0;
     private double annualInterestRate = 0;
-    private double dateCreated = 0;
+    private Date dateCreated;
 
     //    Constructor
     public Account() {
@@ -42,11 +44,11 @@ public class Account {
         this.annualInterestRate = annualInterestRate;
     }
 
-    public double getDateCreated() {
+    public Date getDateCreated() {
         return dateCreated;
     }
 
-    public void setDateCreated(double dateCreated) {
+    public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
     }
 
@@ -65,5 +67,9 @@ public class Account {
 
     public double deposit(double number) {
         return blance + number;
+    }
+
+    public double displayAccount(Account account) {
+        return blance;
     }
 }
