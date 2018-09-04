@@ -5,7 +5,7 @@ import java.util.Date;
 public class Account {
     //    Fields
     private int id = 0;
-    private double blance = 0;
+    private double blance = 100;
     private double annualInterestRate = 0;
     private Date dateCreated;
 
